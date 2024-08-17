@@ -1,6 +1,9 @@
 import { Nav, NavLink } from "@/components/Nav";
 import React from "react";
 
+// To avoid caching
+export const dynamic = "force-dynamic";
+
 export default function AdminLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
