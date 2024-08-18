@@ -4,7 +4,7 @@ import { useTransition } from "react";
 import {
   deleteProduct,
   toggleProductAvailability,
-} from "../../_actions/product";
+} from "../../_actions/products";
 import { useRouter } from "next/navigation";
 
 // Activate-Deactivate button
