@@ -11,7 +11,7 @@ import {
 // Content not tested due to lack of Stripe
 
 type OrderInformationProps = {
-  order: { id: string; createdAt: Date; pricePaidInCents: number };
+  order: { id: string; createdAt: Date; pricePaid: number };
   product: { imagePath: string; name: string; description: string };
   downloadVerificationId: string;
 };
@@ -46,7 +46,7 @@ export function OrderInformation({
               Price Paid
             </Text>
             <Text className="mt-0 mr-4">
-              {formatCurrency(order.pricePaidInCents / 100)}
+              {formatCurrency(order.pricePaid)}
             </Text>
           </Column>
         </Row>
